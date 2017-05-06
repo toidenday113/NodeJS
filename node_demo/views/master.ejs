@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Master</title>
+    <style>
+      .header{
+        width:100%;
+        height: 150px;
+        background: #c9c9c9;
+      }
+      .main{
+        width: 100%;
+      }
+      .left{
+        width: 15%;
+        float: left;
+        background: red;
+        height: 350px;
+      }
+      .right{
+        float: right;
+        width: 85%;
+        background: blue;
+        height: 350px;
+      }
+      .footer{
+        width: 100%;
+        height: 150px;
+        clear: both;
+        background: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <% include header/header.ejs %>
+    <div class="main">
+      <% include navleft/nav_left.ejs %>
+
+        <% include nav_right/nav_right.ejs %>
+
+    </div>
+      <% include footer/footer.ejs %>
+
+  </body>
+</html>

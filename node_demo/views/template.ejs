@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title> Template ejs </title>
+</head>
+<body>
+	<h1> Wellcome to template ejs</h1>
+	
+	
+	<% for(var i=0; i < 10; i++){ %>
+		<%= i %>
+			<br>
+		
+	<%	} %>
+	<!--   Cách xuất dữ liệu ra ngoài người dùng bằng ejs   -->
+	
+	<%  var str = '<h1 style="color:red"> Hoang Kha</h1>'; %>
+	
+	<!-- C1  xuất ra ngoài có tính bảo mặt (mã hóa code html)
+		<%= %>
+	
+	-->
+	
+	<%= str; %>
+	
+			
+	<!-- C2 Xuất ra ngoài không có tính bảo mặt (không mã hóa code html)
+		<%- %>
+	-->
+		<%-  str; %>
+		
+		
+</body>
+</html>
